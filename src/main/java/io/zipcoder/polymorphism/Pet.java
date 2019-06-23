@@ -21,7 +21,7 @@ public class Pet {
 
     @Override
     public String toString() {
-        return "Pet:\n" +
-                "\tName='" + name;
+        return "\nPet:\n" +
+                "\tName= " + name;
     }
 }

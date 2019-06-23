@@ -9,4 +9,9 @@ public class Iguana extends Pet {
     public String speak() {
         return "*stick tongue out twice*";
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " sais " + speak() + "\n";
+    }
 }

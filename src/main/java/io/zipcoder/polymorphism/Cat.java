@@ -9,4 +9,9 @@ public class Cat extends Pet{
     public String speak() {
         return "Meow";
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " sais " + speak() + "\n";
+    }
 }

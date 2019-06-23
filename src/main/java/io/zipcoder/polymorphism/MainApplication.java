@@ -11,9 +11,10 @@ public class MainApplication {
         Console console = new Console();
         Integer amountOfPets = console.returnInteger("How many pets do you have?");
         ArrayList<Pet> listPets = new ArrayList<Pet>();
+        String petType = "";
 
         for (int i = 0; i < amountOfPets ; i++) {
-            String petType = console.returnString("What Type of pet do you have?");
+           petType = console.returnString("What Type of pet do you have?");
 
             switch(petType.toUpperCase()){
                 case "DOG":
@@ -25,6 +26,9 @@ public class MainApplication {
                 case "IGUANA":
                     listPets.add(new Iguana(console.returnString("Name of our Iguana")));
                     break;
+                    default:
+                        i -= 1;
+                        break;
             }
         }
 
